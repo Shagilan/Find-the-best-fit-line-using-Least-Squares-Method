@@ -1,6 +1,6 @@
 # Implementation of Univariate Linear Regression
-# NAME  :SHAGILAN U
-# REG NO:212224040303
+## NAME  :SHAGILAN U
+## REG NO:212224040303
 
 ## AIM:
 To implement univariate Linear Regression to fit a straight line using least squares.
