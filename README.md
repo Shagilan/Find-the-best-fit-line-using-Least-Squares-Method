@@ -1,4 +1,3 @@
-<img width="877" height="793" alt="image" src="https://github.com/user-attachments/assets/658f56b7-9c15-4373-a99f-1cabe68cea31" /># Implementation of Univariate Linear Regression
 ## NAME  :SHAGILAN U
 ## REG NO:212224040303
 
