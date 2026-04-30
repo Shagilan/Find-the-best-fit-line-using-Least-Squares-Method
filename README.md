@@ -1,4 +1,4 @@
-# Implementation of Univariate Linear Regression
+<img width="877" height="793" alt="image" src="https://github.com/user-attachments/assets/658f56b7-9c15-4373-a99f-1cabe68cea31" /># Implementation of Univariate Linear Regression
 ## NAME  :SHAGILAN U
 ## REG NO:212224040303
 
@@ -23,53 +23,31 @@ To implement univariate Linear Regression to fit a straight line using least squ
 ```
 /*
 Program to implement univariate Linear Regression to fit a straight line using least squares.
-Developed by: MANIKANDAN
-RegisterNumber: 212224040183
+Developed by: SHAGILAN U
+RegisterNumber: 212224040303
 */
 ```
 ~~~
 import numpy as np
 import matplotlib.pyplot as plt
-
-# Sample data (X: input, Y: output)
-X = np.array([1, 2, 3, 4, 5])
-Y = np.array([2, 4, 5, 4, 5])
-
-# Number of data points
-#n = len(X)
-
-# Calculate mean
-x_mean = np.mean(X)
-y_mean = np.mean(Y)
-
-# Calculate slope (m) and intercept (b)
-numerator = np.sum((X - x_mean) * (Y - y_mean))
-denominator = np.sum((X - x_mean) ** 2)
-
-m = numerator/denominator
-b = y_mean - m * x_mean
-
-print("Slope (m):", m)
-print("Intercept (b):", b)
-
-# Predicted values
-Y_pred = m * X + b
-x = input("Enter value: ")
-yy = m * float(x) + b
-print("Value:", yy)
-# Plotting
-plt.scatter(X, Y, label="Data Points")
-plt.plot(X, Y_pred, label="Best Fit Line")
-plt.xlabel("X")
-plt.ylabel("Y")
-plt.legend()
-plt.title("Univariate Linear Regression")
+x=np.array(eval(input()))
+y=np.array(eval(input()))
+xmean=np.mean(x)
+ymean=np.mean(y)
+num,den=0,0
+for i in range(len(x)):
+  num+=(x[i]-xmean)*(y[i]-ymean)
+  den+=(x[i]-xmean)**2
+m=num/den
+c=ymean-m*xmean
+print(m,c)
+y_pre=m*x+c
+print(y_pre)
+plt.scatter(x,y)
+plt.plot(x,y_pre,color="red")
 plt.show()
 ~~~
-## Output:
-<img width="783" height="762" alt="image" src="https://github.com/user-attachments/assets/ca50c741-c289-41a4-bf10-b911bd543e4f" />
-
-
+## Output:<img width="877" height="793" alt="image" src="https://github.com/user-attachments/assets/1dff3855-ef29-46fd-a3d9-3ac43f3b6443" />
 
 ## Result:
 Thus the univariate Linear Regression was implemented to fit a straight line using least squares using python programming.
